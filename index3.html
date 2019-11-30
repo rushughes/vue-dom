@@ -1,0 +1,26 @@
+<html>
+  <!-- https://jsfiddle.net/rushughes/yu983L2c/ -->
+  <head>
+    <style>
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+
+  <input type="text" v-model="name">
+  <p>
+    {{ name }}
+  </p>
+</div>
+    <script>
+      new Vue({
+  el: '#app',
+  data: {
+    name: 'Max'
+  }
+});
+
+    </script>
+  </body>
+</html>
