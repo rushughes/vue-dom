@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="ingredient in ingredients">{{ ingredient }}</li>
+      </ul>
+    </div>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          ingredients: ['meat', 'fruit', 'cookies'],
+          persons: [
+            {name: 'Max', age: 27, color: 'red'},
+            {name: 'Anna', age: 'unknown', color: 'blue'},
+            {name: 'Janet', age: 33, color: 'yellow'},
+          ]
+        },
+        computed: {
+
+        }
+      });
+  </script>
+  </body>
+</html>
